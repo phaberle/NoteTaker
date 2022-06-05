@@ -1,0 +1,24 @@
+{
+  "notes": [
+    {
+      "id": "1",
+      "title": "Test Title",
+      "text": "Test text"
+    },
+    {
+      "title": "Groceries",
+      "text": "Get plastic bowls for Bubba",
+      "id": "1"
+    },
+    {
+      "title": "Travel",
+      "text": "Go to Dallas",
+      "id": "2"
+    },
+    {
+      "title": "Travel",
+      "text": "Go to Dallas",
+      "id": "3"
+    }
+  ]
+}
