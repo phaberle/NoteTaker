@@ -3,6 +3,7 @@ let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
+let deleteText;
 
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
@@ -25,7 +26,7 @@ const hide = elem => {
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
-const getNotes = () =>
+const getNotes = (url) =>
   fetch('/api/notes', {
     method: 'GET',
     headers: {
@@ -47,7 +48,7 @@ const deleteNote = id =>
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
-    }
+    }    
   });
 
 const renderActiveNote = () => {
